@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+calculadora/__init__.py
+calculadora/_utils.py
+calculadora/soma.py
+calculadora/subtracao.py
+calculadora.egg-info/PKG-INFO
+calculadora.egg-info/SOURCES.txt
+calculadora.egg-info/dependency_links.txt
+calculadora.egg-info/requires.txt
+calculadora.egg-info/top_level.txt
+tests/test_soma.py

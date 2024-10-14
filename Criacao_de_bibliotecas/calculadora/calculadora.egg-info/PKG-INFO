@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: calculadora
+Version: 1.0.0
+Summary: Uma biblioteca para calculos
+Home-page: https://github.com/salvnetto/calculadora
+Author: Salvador Netto
+Author-email: salvv.netto@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy==2.1.2
