@@ -3,13 +3,21 @@ title: "Criação de Bibliotecas em Python"
 format: 
   revealjs:
     embed-resources: true
+    theme: fabio.scss
+    slide-number: c/t
+    code-line-numbers: true
+    incremental: false
+    transition: fade
+    progress: true
+    background-transition: fade
+    transition-speed: slow
 callout-appearance: simple
 editor: visual
 ---
 
 <style>
   .reveal {
-    font-size: 36px;
+    font-size: 34px;
   }
 </style>
 
@@ -37,6 +45,12 @@ Bibliotecas ou pacotes são ferramentas essenciais para encapsular código reuti
 
 # Configuração do Ambiente
 
+## Github
+
+Diretório para o Github do curso:
+
+github.com/salvnetto/Curso-Pacotes-Python
+
 ## Passos para Configuração
 
 1.  **Criar e Abrir um Diretório** 
@@ -54,17 +68,18 @@ env\Scripts\activate
 
 ::: callout-important
 No Windows, pode ser necessário habilitar a "política de execução". Você pode fazer isso emitindo o seguinte comando no Terminal:
-
 ``` bash
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 :::
 
+
+
 Mais informações: [Guia Completo para Usar o Virtual Environment (venv) no Python](https://dev.to/franciscojdsjr/guia-completo-para-usar-o-virtual-environment-venv-no-python-57bo)
 
-# Estrutura de Diretórios
+## Estrutura de Diretórios
 
-``` plaintext
+``` bash
 minha_biblioteca/
 ├── minha_biblioteca/
 │   ├── __init__.py
@@ -105,6 +120,8 @@ Desenvolva suas funções e classes nos módulos. Mantenha a simplicidade e clar
 def saudacao(nome):
     return f"Olá, {nome}!"
 ```
+
+
 
 ## Docstrings
 
@@ -164,7 +181,7 @@ pip freeze > requirements.txt
 
 Configure a instalação da biblioteca, assegurando que as dependências estejam corretamente especificadas:
 
-``` python
+``` {.python code-line-numbers="|4-5|6-7|8-10|11-12|13|14-17|18"}
 from setuptools import setup, find_packages
 
 setup(
@@ -185,8 +202,6 @@ setup(
     python_requires='>=3.6',
 )
 ```
-
-Mais informações sobre os Classifiers: [Classifier Pypi](https://pypi.org/classifiers/)
 
 # Testes
 
